@@ -1,0 +1,92 @@
+/* styles.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #00bfff;
+}
+
+#shark {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('shark.gif'); /* תמונת הכריש */
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#score {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#gameOverScreen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#musicControls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#toggleMusic {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}

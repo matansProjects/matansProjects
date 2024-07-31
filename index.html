@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="shark"></div>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 60</div>
+        <button id="startButton">Start Game</button>
+    </div>
+    <div id="gameOverScreen">
+        <h1>GAME OVER</h1>
+        <p id="finalScore"></p>
+        <p id="highScore"></p>
+        <button id="restartButton">Restart Game</button>
+    </div>
+    <div id="musicControls">
+        <button id="toggleMusic">stop Music</button>
+        <input id="musicVolume" type="range" min="0" max="1" step="0.1" value="1">
+    </div>
+    <audio id="biteSound" src="eat.wav"></audio>
+    <audio id="backgroundMusic" src="background.wav" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
