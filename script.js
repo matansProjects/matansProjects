@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createFish() {
         const fish = document.createElement('div');
         fish.className = 'fish';
-        const fishSizes = ['30px', '40px', '50px'];
+        const fishSizes = ['50px', '80px', '100px'];
         const fishImages = ['fish.gif', 'fish1.gif', 'fish2.gif', 'fish3.gif']; // רשימת תמונות הדגים
         const randomSize = fishSizes[Math.floor(Math.random() * fishSizes.length)];
         const randomImage = fishImages[Math.floor(Math.random() * fishImages.length)];
